@@ -7,13 +7,13 @@ import Vote from './Vote';
 import * as actionCreators from '../actions';
 
 export const Voting = React.createClass({
-	mixins: [PureRenderMixin],
+  mixins: [PureRenderMixin],
   render: function() {
     return <div>
-			{this.props.winner ?
-				<Winner ref="winner" winner={this.props.winner} /> :
-				<Vote {...this.props} />}
-		</div>;
+      {this.props.winner ?
+        <Winner ref="winner" winner={this.props.winner} /> :
+        <Vote {...this.props} />}
+    </div>;
   }
 });
 

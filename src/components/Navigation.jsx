@@ -10,8 +10,8 @@ var NavigationButton = (props) =>
   </li>;
 
 export default React.createClass({
-	mixins: [PureRenderMixin],
-	render: function(){
+  mixins: [PureRenderMixin],
+  render: function(){
     return <nav className="navigation">
       <ul>
         <NavigationMenu className="navigation-menu" href="javascript:;" label="MyKin" />
@@ -33,5 +33,5 @@ export default React.createClass({
 
     </nav>    
     ;
-	}
+  }
 });
